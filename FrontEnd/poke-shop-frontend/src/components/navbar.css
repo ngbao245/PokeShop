@@ -1,0 +1,35 @@
+.poke-logo {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/pokeBallIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: inline-block;
+}
+
+.menu-div {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.2s ease-in-out;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 8rem;
+}
+
+.menu-div:hover {
+  color: #f0f0f0 !important;
+  cursor: pointer;
+  background-color: #157347;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  width: 11rem !important;
+  font-weight: bold;
+}
+
+.linkStyle {
+  color: black;
+  text-decoration: none;
+  transition: width 0.3s ease;
+}

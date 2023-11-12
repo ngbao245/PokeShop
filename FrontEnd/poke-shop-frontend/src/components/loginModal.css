@@ -1,0 +1,38 @@
+.separator {
+  color: #cccccc;
+  font: 200 16px/14px #e7eaed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 32px 0;
+  position: relative;
+}
+
+.separator:before,
+.separator:after {
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  width: 40%;
+  height: 1px;
+  background: #e7eaed;
+}
+
+.separator:after {
+  right: 0;
+}
+
+.separator:before {
+  left: 0;
+}
+
+.google-photo {
+  width: 30px;
+  height: 30px;
+  background-image: url("../assets/googleIcon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  display: inline-block;
+}
+

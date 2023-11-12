@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "jZ07F7eBiXriSztFMzod9o0c/nUPUn9ELQfqSIPLHs3lV6BUeAs+GcFEPZCYG2t3RKOP5xzOhbUlbn3/OJxh9Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\BiBo\\Desktop\\PokeShop\\BackEnd\\Web\\PokeShop\\PokeShop.WebAPI\\PokeShop.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BiBo\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\BiBo\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\BiBo\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\BiBo\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\BiBo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\BiBo\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
