@@ -2,11 +2,26 @@ import { useState } from "react";
 import { Form, Nav } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import "./loginModal.css";
+import "../assets/styles/loginModal.css";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 export const LoginModal: React.FC = () => {
-  const [show, setShow] = useState(false);
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string()
+        .email("Valid email required")
+        .required("Email is required"),
+    }),
+    onSubmit: (values) => {
+      console.log(values);
+    },
+  });
 
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -31,8 +46,20 @@ export const LoginModal: React.FC = () => {
               <section>
                 <Form.Group className="mb-3">
                   {/* <Form.Label>Email address</Form.Label> */}
-                  <Form.Control type="email" placeholder="Enter email" />
+                  <Form.Control
+                    type="email"
+                    placeholder="Enter email"
+                    id="email"
+                    value={formik.values.email}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    name="email"
+                  />
+                  {formik.touched.email && formik.errors.email ? (
+                    <div className="text-danger">{formik.errors.email}</div>
+                  ) : null}
                 </Form.Group>
+
                 <div className="d-grid gap-2">
                   <Button variant="success" className="fw-bold">
                     Sign up or Sign in
@@ -49,7 +76,6 @@ export const LoginModal: React.FC = () => {
               </Button>
             </div>
           </Modal.Body>
-
           {/* <div className="d-grid gap-1 p-2">
             <Button variant="primary" size="lg">
               Block level button

@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { LoginModal } from "./loginModal";
-import "./navbar.css";
+import "../assets/styles/navbar.css";
 
 const NavBar: React.FC = () => {
   return (
